@@ -6,9 +6,10 @@ Features:
   - Fun and Simple
   
 Todos :
-  - Change code to ES6 classes
-  - Webpack to bundle p5.js with the game for better and fast serving
-  - Add more shapes
-  - Imporve the code design with typescript
+  - [ ] Optimize for mobile
+  - [ ] Change code to ES6 classes
+  - [ ] Webpack to bundle p5.js with the game for better and fast serving
+  - [ ] Add more shapes
+  - [ ] Imporve the code design with typescript
 
 Enjoy and have fun!
