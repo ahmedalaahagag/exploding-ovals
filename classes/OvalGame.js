@@ -8,15 +8,20 @@ class OvalGame {
     };
 
     constructor(score = 0) {
-        this.props = {
-            randomOvals: [],
-            numberOfOvals: 5,
-            rightColor: null,
-            availableColors: [],
-            activeState: this.gameState.start,
-            gameScore: score,
-            score: new GameScore(score),
+        if(OvalGame.instance == null) {
+            this.props = {
+                randomOvals: [],
+                numberOfOvals: 5,
+                rightColor: null,
+                availableColors: [],
+                activeState: this.gameState.start,
+                gameScore: score,
+                score: new GameScore(score),
+            }
         }
+        let OvalGameObject = OvalGame.instance;
+        Object.freeze(OvalGameObject);
+        return OvalGameObject;
     }
 
     setRightColor = (color= []) => {

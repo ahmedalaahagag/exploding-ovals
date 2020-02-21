@@ -2,14 +2,21 @@ class GameScore {
     props;
 
     constructor(initialScore = 0) {
-        this.props = {
-            score: initialScore
+        if (GameScore.instance == null) {
+            this.props = {
+                score: initialScore
+            }
         }
+        let GameScoreObject = OvalGame.instance;
+        Object.freeze(GameScoreObject);
+        return GameScoreObject;
     }
+
     getCurrentScore = () => {
         return this.props.score;
     }
-   updateScore = (newScore) => {
-       this.props.score = newScore;
+
+    updateScore = (newScore) => {
+        this.props.score = newScore;
     }
 }
