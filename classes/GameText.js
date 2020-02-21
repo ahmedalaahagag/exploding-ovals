@@ -4,13 +4,17 @@ class GameText {
     constructor() {
         this.props = {
             textColor: [],
-            textFontSize: 32,
+            textFontSize: 20,
             font:null
         }
     }
 
     setTextColor = (color = []) => {
         this.props.textColor = color;
+    }
+
+    setTextSize = (size = 32) => {
+        this.props.textFontSize = size;
     }
 
     setupFont = () => {

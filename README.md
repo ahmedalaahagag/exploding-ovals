@@ -6,7 +6,7 @@ Features:
   - Fun and Simple
   
 Todos :
-  - [ ] Optimize for mobile
+  - [x] Optimize for mobile
   - [ ] Change code to ES6 classes
   - [ ] Webpack to bundle p5.js with the game for better and fast serving
   - [ ] Add more shapes
